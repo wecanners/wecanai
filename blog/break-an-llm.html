@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How Few Documents Can Poison an LLM? | WeCan AI</title>
+  <meta name="description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <link rel="canonical" href="https://wecanai.me/blog/break-an-llm.html">
+
+  <link rel="alternate" hreflang="en" href="https://wecanai.me/blog/break-an-llm.html">
+  <link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/break-an-llm.html">
+  <link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/break-an-llm.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WeCan AI">
+  <meta property="og:title" content="How Many Documents Does It Take to Break an LLM?">
+  <meta property="og:description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <meta property="og:url" content="https://wecanai.me/blog/break-an-llm.html">
+  <meta property="og:image" content="https://wecanai.me/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Many Documents Does It Take to Break an LLM?">
+  <meta name="twitter:description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <meta name="twitter:image" content="https://wecanai.me/assets/img/og-default.png">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10182b">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Many Documents Does It Take to Break an LLM?",
+    "description": "An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.",
+    "datePublished": "2026-02-25",
+    "dateModified": "2026-02-25",
+    "author": { "@type": "Person", "name": "Joziane El Hawi" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "WeCan AI",
+      "logo": { "@type": "ImageObject", "url": "https://wecanai.me/assets/img/og-default.png" }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://wecanai.me/blog/break-an-llm.html"
+    },
+    "image": "https://wecanai.me/assets/img/og-default.png",
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wecanai.me/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wecanai.me/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "How Many Documents Does It Take to Break an LLM?", "item": "https://wecanai.me/blog/break-an-llm.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html" class="brand" aria-label="WeCan AI home">WeCan<span class="dot">.</span>AI</a>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../ai-upskilling.html">AI Upskilling</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../blog.html" aria-current="page">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="lang-toggle" href="../ar/blog/break-an-llm.html" hreflang="ar" lang="ar">العربية</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="section">
+    <div class="wrap">
+      <div class="article">
+        <p style="margin-bottom:1rem"><a href="../blog.html" class="more" style="font-size:.85rem">← All articles</a></p>
+        <span class="eyebrow">WeCan AI Blog</span>
+        <h1 style="margin-top:1rem">How Many Documents Does It Take to Break an LLM?</h1>
+        <p class="meta">Published 25 February 2026 · By Joziane El Hawi</p>
+        <p>The question sounds dramatic, and the answer is dramatic too, because it changes
+        how everyday users should think about AI risk.</p>
+
+        <p>A research write-up led by Anthropic, with the UK AI Security Institute and the
+        Alan Turing Institute, reported that a small number of malicious documents was enough
+        to plant a hidden trigger-and-response behavior in a model. The unsettling part is not
+        only the number. It is that the number was much smaller than people had assumed for
+        large models.</p>
+
+        <h2>What "poisoning" means in plain terms</h2>
+        <p>Data poisoning is when bad examples slipped into training data teach a model a
+        hidden rule: if a particular trigger appears, behave a certain way. Because modern
+        models learn from enormous text collections, a small set of carefully crafted
+        documents can have an outsized effect.</p>
+
+        <h2>Why this matters for your team</h2>
+        <p>You will not be training a frontier model. But the finding reinforces a habit we
+        teach in every program: verify outputs, do not assume a confident answer is a correct
+        one, and keep a human review step for anything that matters. Trust is earned per
+        output, not granted to the tool.</p>
+
+        <p><em>The full article will be published here.</em></p>
+        <div class="cta-band reveal" style="margin-top:2.5rem">
+          <div>
+            <h2>Turn AI awareness into AI capability</h2>
+            <p>Our programs teach teams to use AI safely, critically and consistently.</p>
+          </div>
+          <a class="btn" href="../contact.html">Book a free call <span class="btn__arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">WeCan<span class="dot">.</span>AI</div>
+        <p style="font-size:.92rem;max-width:30ch">Customized, lab-based AI upskilling for teams. Based in Masdar City, Abu Dhabi.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/wecanai" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/wecan_ai/" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/channel/UC8Jv9rhsf-yN-Vhvq4nRxfQ" rel="noopener">YouTube</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../ai-upskilling.html">AI Upskilling</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="../contact.html">Contact us</a></li>
+          <li><a href="mailto:yes@wecanai.me">yes@wecanai.me</a></li>
+          <li><a href="../ar/index.html" lang="ar">العربية</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> WeCan AI. All rights reserved.</span>
+      <span>Masdar City · Abu Dhabi · United Arab Emirates</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

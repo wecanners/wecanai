@@ -1,0 +1,21 @@
+# ============================================================
+# WeCan AI - robots.txt
+# ============================================================
+# CURRENT STATE: STAGING on GitHub Pages (leryan36.github.io)
+#
+# While the site lives on the github.io URL, indexing is BLOCKED
+# so Google does not index the staging copy as duplicate content.
+#
+# >>> AT CUTOVER TO wecanai.me (Cloudflare):
+#     1. Delete the "Disallow: /" line below.
+#     2. Uncomment the "Allow: /" line below.
+#     3. Commit and push.
+#     4. Submit https://wecanai.me/sitemap.xml in Google Search Console.
+# ============================================================
+
+User-agent: *
+Disallow: /
+# Allow: /
+
+# Sitemap (always points at the final production domain)
+Sitemap: https://wecanai.me/sitemap.xml

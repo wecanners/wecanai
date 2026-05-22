@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WeCan AI sitemap. All URLs use the final production domain (wecanai.me).
+  Each URL declares its hreflang alternates so search engines pair
+  the English and Arabic versions correctly.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===================== ENGLISH ===================== -->
+  <url>
+    <loc>https://wecanai.me/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ai-upskilling.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/ai-upskilling.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/ai-upskilling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/ai-upskilling.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/about.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/contact.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/the-meta-ai-scandal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/the-meta-ai-scandal.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/the-meta-ai-scandal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/the-meta-ai-scandal.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/the-anthropic-breakup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/the-anthropic-breakup.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/the-anthropic-breakup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/the-anthropic-breakup.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/break-an-llm.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/break-an-llm.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/break-an-llm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/break-an-llm.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/lawless-ai-era.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/lawless-ai-era.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/lawless-ai-era.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/lawless-ai-era.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/chatgpt-is-not-your-bestie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/chatgpt-is-not-your-bestie.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/chatgpt-is-not-your-bestie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/chatgpt-is-not-your-bestie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/blog/why-chatbots-lie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/why-chatbots-lie.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/why-chatbots-lie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/why-chatbots-lie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ===================== ARABIC ===================== -->
+  <url>
+    <loc>https://wecanai.me/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/ai-upskilling.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/ai-upskilling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/ai-upskilling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/ai-upskilling.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/about.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/contact.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/the-meta-ai-scandal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/the-meta-ai-scandal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/the-meta-ai-scandal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/the-meta-ai-scandal.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/the-anthropic-breakup.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/the-anthropic-breakup.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/the-anthropic-breakup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/the-anthropic-breakup.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/break-an-llm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/break-an-llm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/break-an-llm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/break-an-llm.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/lawless-ai-era.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/lawless-ai-era.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/lawless-ai-era.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/lawless-ai-era.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/chatgpt-is-not-your-bestie.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/chatgpt-is-not-your-bestie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/chatgpt-is-not-your-bestie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/chatgpt-is-not-your-bestie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wecanai.me/ar/blog/why-chatbots-lie.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wecanai.me/ar/blog/why-chatbots-lie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wecanai.me/blog/why-chatbots-lie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wecanai.me/blog/why-chatbots-lie.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
