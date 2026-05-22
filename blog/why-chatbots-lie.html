@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Why Chatbots Lie: AI Hallucinations Explained | WeCan AI</title>
-  <meta name="description" content="Research on why language models hallucinate promises clarity on a technical nuisance. What it really reveals about the uncertain ground beneath today's AI.">
+  <title>Why Chatbots Hallucinate: The Research Explained | WeCan AI</title>
+  <meta name="description" content="A 2025 research paper argues language models hallucinate because training and evaluation reward confident guessing over admitting uncertainty. What that means for how you use AI.">
   <link rel="canonical" href="https://wecanai.me/blog/why-chatbots-lie.html">
 
   <link rel="alternate" hreflang="en" href="https://wecanai.me/blog/why-chatbots-lie.html">
@@ -14,13 +14,13 @@
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="WeCan AI">
-  <meta property="og:title" content="Why Chatbots Lie: The Truth About Hallucinations">
-  <meta property="og:description" content="Research on why language models hallucinate promises clarity on a technical nuisance. What it really reveals about the uncertain ground beneath today's AI.">
+  <meta property="og:title" content="Why Chatbots Lie: Understanding AI Hallucinations">
+  <meta property="og:description" content="A 2025 research paper argues language models hallucinate because training and evaluation reward confident guessing over admitting uncertainty. What that means for how you use AI.">
   <meta property="og:url" content="https://wecanai.me/blog/why-chatbots-lie.html">
   <meta property="og:image" content="https://wecanai.me/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Why Chatbots Lie: The Truth About Hallucinations">
-  <meta name="twitter:description" content="Research on why language models hallucinate promises clarity on a technical nuisance. What it really reveals about the uncertain ground beneath today's AI.">
+  <meta name="twitter:title" content="Why Chatbots Lie: Understanding AI Hallucinations">
+  <meta name="twitter:description" content="A 2025 research paper argues language models hallucinate because training and evaluation reward confident guessing over admitting uncertainty. What that means for how you use AI.">
   <meta name="twitter:image" content="https://wecanai.me/assets/img/og-default.png">
 
   <meta name="robots" content="index, follow">
@@ -33,10 +33,11 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Why Chatbots Lie: The Truth About Hallucinations",
-    "description": "Research on why language models hallucinate promises clarity on a technical nuisance. What it really reveals about the uncertain ground beneath today's AI.",
+    "headline": "Why Chatbots Lie: Understanding AI Hallucinations",
+    "description": "A 2025 research paper argues language models hallucinate because training and evaluation reward confident guessing over admitting uncertainty. What that means for how you use AI.",
     "datePublished": "2026-01-31",
     "dateModified": "2026-01-31",
+    "wordCount": 508,
     "author": { "@type": "Person", "name": "Joziane El Hawi" },
     "publisher": {
       "@type": "Organization",
@@ -58,7 +59,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wecanai.me/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wecanai.me/blog.html" },
-      { "@type": "ListItem", "position": 3, "name": "Why Chatbots Lie: The Truth About Hallucinations", "item": "https://wecanai.me/blog/why-chatbots-lie.html" }
+      { "@type": "ListItem", "position": 3, "name": "Why Chatbots Lie: Understanding AI Hallucinations", "item": "https://wecanai.me/blog/why-chatbots-lie.html" }
     ]
   }
   </script>
@@ -93,28 +94,67 @@
       <div class="article">
         <p style="margin-bottom:1rem"><a href="../blog.html" class="more" style="font-size:.85rem">← All articles</a></p>
         <span class="eyebrow">WeCan AI Blog</span>
-        <h1 style="margin-top:1rem">Why Chatbots Lie: The Truth About Hallucinations</h1>
-        <p class="meta">Published 31 January 2026 · By Joziane El Hawi</p>
-        <p>It is a curious thing to watch the AI industry publish research that, almost in
-        passing, admits how much of its foundation is still uncertain.</p>
+        <h1 style="margin-top:1rem">Why Chatbots Lie: Understanding AI Hallucinations</h1>
+        <p class="meta">Published 31 January 2026 · By Joziane El Hawi · 7 min read</p>
+        <p>One of the more useful things to happen in AI recently was a research paper
+that, in explaining a familiar annoyance, quietly clarified something
+fundamental about how these systems work.</p>
 
-        <p>Work on why language models hallucinate is usually framed as clarity on a technical
-        nuisance: why chatbots sometimes state false things with full confidence. Read closely,
-        it delivers something more interesting, a clearer view of how these systems actually
-        work, and where they do not.</p>
+<p>In September 2025, researchers including authors at OpenAI published a paper
+titled "Why Language Models Hallucinate." A hallucination, in this context, is
+an instance where a model confidently produces an answer that is not true. The
+paper's central argument is worth stating plainly.</p>
 
-        <h2>What a hallucination really is</h2>
-        <p>A hallucination is not a glitch in the ordinary sense. It is the model doing exactly
-        what it was built to do, predicting plausible text, in a situation where plausible and
-        true have come apart. The model has no separate sense of "I know this" versus "I am
-        guessing." It produces fluent output either way.</p>
+<h2>The argument: training rewards guessing</h2>
 
-        <h2>The practical takeaway</h2>
-        <p>This is why verification is not an optional extra in responsible AI use. It is the
-        core skill. A confident answer is a starting point for checking, never the end of the
-        process. We build that habit into every workflow we teach.</p>
+<p>The paper argues that language models hallucinate because standard training
+and evaluation procedures reward confident guessing over the honest
+acknowledgement of uncertainty.</p>
 
-        <p><em>The full article will be published here.</em></p>
+<p>The comparison the authors draw is to a multiple-choice exam. A student who
+does not know an answer is, under most marking schemes, better off guessing
+than leaving the question blank. A blank scores zero; a guess has some chance
+of scoring. Over many questions and many exams, that incentive structure
+trains a particular behaviour: when unsure, answer anyway.</p>
+
+<p>Language models, the paper argues, have been shaped by a similar incentive.
+The benchmarks and leaderboards used to evaluate them tend to reward producing
+an answer and penalise saying "I do not know." A model that confidently guesses
+will, on average, score better than one that honestly abstains. So the
+confident guess is what gets reinforced.</p>
+
+<blockquote>On this account, a hallucination is not a glitch. It is the
+predictable result of how the system was trained and tested.</blockquote>
+
+<h2>Why this is more reassuring than it sounds</h2>
+
+<p>Framed this way, hallucination becomes less mysterious. The model is not
+malfunctioning when it states a falsehood with confidence. It is doing exactly
+what it was built and rewarded to do: produce a plausible, fluent answer. The
+trouble is that "plausible" and "true" are not the same thing, and the model
+has no separate internal sense of "I know this" as distinct from "I am
+guessing." It produces fluent text in both cases, and it sounds equally
+confident either way.</p>
+
+<p>The paper's authors suggest this also points toward part of the solution:
+if evaluation methods were changed to stop punishing honest uncertainty,
+some of the incentive to guess could be removed. Newer models do show lower
+hallucination rates. But the authors are clear that this remains a hard,
+unsolved problem, not a closed one.</p>
+
+<h2>The practical takeaway</h2>
+
+<p>For anyone using these tools for real work, the lesson is direct. If a
+confident tone is, by the system's design, not a reliable signal of
+correctness, then verification cannot be treated as an optional extra. It is
+the core skill of responsible AI use.</p>
+
+<p>A confident answer from a chatbot is a starting point for checking, never the
+end of the process. That is not a counsel of distrust; it is simply working
+with the tool as it actually is rather than as it sounds. Building that habit,
+the reflex to verify before relying, is one of the most practical things any
+team can take from a year of AI research, and it is one of the first things a
+good AI programme should teach.</p>
         <div class="cta-band reveal" style="margin-top:2.5rem">
           <div>
             <h2>Turn AI awareness into AI capability</h2>

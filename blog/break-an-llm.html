@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>How Few Documents Can Poison an LLM? | WeCan AI</title>
-  <meta name="description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <title>How Few Documents Can Poison an LLM? The Study | WeCan AI</title>
+  <meta name="description" content="A joint study by Anthropic, the UK AI Security Institute and the Alan Turing Institute found roughly 250 documents can backdoor a large language model. What it means for everyday AI users.">
   <link rel="canonical" href="https://wecanai.me/blog/break-an-llm.html">
 
   <link rel="alternate" hreflang="en" href="https://wecanai.me/blog/break-an-llm.html">
@@ -14,13 +14,13 @@
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="WeCan AI">
-  <meta property="og:title" content="How Many Documents Does It Take to Break an LLM?">
-  <meta property="og:description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <meta property="og:title" content="How Few Documents Does It Take to Poison an LLM?">
+  <meta property="og:description" content="A joint study by Anthropic, the UK AI Security Institute and the Alan Turing Institute found roughly 250 documents can backdoor a large language model. What it means for everyday AI users.">
   <meta property="og:url" content="https://wecanai.me/blog/break-an-llm.html">
   <meta property="og:image" content="https://wecanai.me/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How Many Documents Does It Take to Break an LLM?">
-  <meta name="twitter:description" content="An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.">
+  <meta name="twitter:title" content="How Few Documents Does It Take to Poison an LLM?">
+  <meta name="twitter:description" content="A joint study by Anthropic, the UK AI Security Institute and the Alan Turing Institute found roughly 250 documents can backdoor a large language model. What it means for everyday AI users.">
   <meta name="twitter:image" content="https://wecanai.me/assets/img/og-default.png">
 
   <meta name="robots" content="index, follow">
@@ -33,10 +33,11 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "How Many Documents Does It Take to Break an LLM?",
-    "description": "An Anthropic-led study found a surprisingly small number of poisoned documents can plant hidden behavior in a large language model. Why that changes how users should think about AI risk.",
+    "headline": "How Few Documents Does It Take to Poison an LLM?",
+    "description": "A joint study by Anthropic, the UK AI Security Institute and the Alan Turing Institute found roughly 250 documents can backdoor a large language model. What it means for everyday AI users.",
     "datePublished": "2026-02-25",
     "dateModified": "2026-02-25",
+    "wordCount": 562,
     "author": { "@type": "Person", "name": "Joziane El Hawi" },
     "publisher": {
       "@type": "Organization",
@@ -58,7 +59,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wecanai.me/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wecanai.me/blog.html" },
-      { "@type": "ListItem", "position": 3, "name": "How Many Documents Does It Take to Break an LLM?", "item": "https://wecanai.me/blog/break-an-llm.html" }
+      { "@type": "ListItem", "position": 3, "name": "How Few Documents Does It Take to Poison an LLM?", "item": "https://wecanai.me/blog/break-an-llm.html" }
     ]
   }
   </script>
@@ -93,30 +94,71 @@
       <div class="article">
         <p style="margin-bottom:1rem"><a href="../blog.html" class="more" style="font-size:.85rem">← All articles</a></p>
         <span class="eyebrow">WeCan AI Blog</span>
-        <h1 style="margin-top:1rem">How Many Documents Does It Take to Break an LLM?</h1>
-        <p class="meta">Published 25 February 2026 · By Joziane El Hawi</p>
-        <p>The question sounds dramatic, and the answer is dramatic too, because it changes
-        how everyday users should think about AI risk.</p>
+        <h1 style="margin-top:1rem">How Few Documents Does It Take to Poison an LLM?</h1>
+        <p class="meta">Published 25 February 2026 · By Joziane El Hawi · 7 min read</p>
+        <p>In October 2025, a research collaboration between Anthropic's Alignment
+Science team, the UK AI Security Institute and the Alan Turing Institute
+published what was described as the largest study of data poisoning conducted
+to date. Its central finding was specific, and it was surprising.</p>
 
-        <p>A research write-up led by Anthropic, with the UK AI Security Institute and the
-        Alan Turing Institute, reported that a small number of malicious documents was enough
-        to plant a hidden trigger-and-response behavior in a model. The unsettling part is not
-        only the number. It is that the number was much smaller than people had assumed for
-        large models.</p>
+<p>The headline number is roughly 250. That is the approximate count of
+malicious documents the researchers found was sufficient to plant a hidden
+"backdoor" in a large language model. The detail that made it notable is that
+this number stayed nearly constant regardless of model size.</p>
 
-        <h2>What "poisoning" means in plain terms</h2>
-        <p>Data poisoning is when bad examples slipped into training data teach a model a
-        hidden rule: if a particular trigger appears, behave a certain way. Because modern
-        models learn from enormous text collections, a small set of carefully crafted
-        documents can have an outsized effect.</p>
+<h2>What the study actually found</h2>
 
-        <h2>Why this matters for your team</h2>
-        <p>You will not be training a frontier model. But the finding reinforces a habit we
-        teach in every program: verify outputs, do not assume a confident answer is a correct
-        one, and keep a human review step for anything that matters. Trust is earned per
-        output, not granted to the tool.</p>
+<p>The researchers tested models ranging from 600 million to 13 billion
+parameters. A 13-billion-parameter model is trained on more than twenty times
+the data of the smallest model in the set. The long-standing assumption in the
+field was that poisoning a bigger model would therefore require proportionally
+more poisoned material; an attacker would need to control some percentage of
+the training data.</p>
 
-        <p><em>The full article will be published here.</em></p>
+<p>The study challenged that assumption. Both the small and the large models
+could be compromised by roughly the same fixed number of poisoned documents.
+For the largest model tested, those 250 documents amounted to about 420,000
+tokens, which the researchers put at around 0.00016 percent of the model's
+total training data. A vanishingly small fraction was enough.</p>
+
+<blockquote>The barrier to a successful poisoning attack, the study suggests,
+is far lower than the field had assumed.</blockquote>
+
+<h2>What "poisoning" means, in plain terms</h2>
+
+<p>Data poisoning is the deliberate insertion of bad examples into the material
+a model learns from. A backdoor is a particular result of it: the poisoned
+examples teach the model a hidden rule of the form "when a specific trigger
+appears, behave in this specific way." Under normal use, the model behaves
+correctly. When the trigger appears, its behaviour flips.</p>
+
+<p>Two points of context keep this in proportion. First, the specific backdoor
+the researchers studied was narrow: it made the model produce gibberish when
+triggered, a denial-of-service effect rather than something more dangerous. The
+researchers were explicit that this particular behaviour poses minimal
+real-world risk in frontier systems. Second, the researchers themselves noted
+open questions: it is not yet clear whether the same pattern holds for more
+complex malicious behaviours, or how the trend changes as models grow larger
+still.</p>
+
+<h2>Why this matters for your team</h2>
+
+<p>You are not going to train a frontier model, so the direct threat is not the
+point. The point is what the finding reinforces about the nature of these
+tools.</p>
+
+<p>Large language models learn from enormous quantities of text scraped from the
+public internet: websites, forums, archives, repositories. That openness is
+what makes them capable, and it is also what makes the supply chain behind them
+difficult to fully secure. The study is a concrete, measured reminder that the
+ground beneath these systems is not as solid as fluent output makes it feel.</p>
+
+<p>The practical response is not alarm. It is the same discipline that good AI
+training has always taught: verify outputs, do not treat a confident answer as
+a correct one, and keep a human review step for anything that carries weight.
+Trust in an AI system is something to be earned per output, not granted to the
+tool as a category. A study about poisoned training data, in the end, points
+back to a very ordinary habit, and that habit is the one worth building.</p>
         <div class="cta-band reveal" style="margin-top:2.5rem">
           <div>
             <h2>Turn AI awareness into AI capability</h2>
