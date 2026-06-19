@@ -100,6 +100,12 @@ h3 { font-size: clamp(1.2rem, 2.4vw, 1.55rem); }
 }
 .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { width: 100%; }
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
+.nav-social { display: flex; align-items: center; gap: .55rem; }
+.nav-social a { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  color: var(--slate); transition: color .2s, background .2s, transform .2s; }
+.nav-social a:hover { color: #fff; background: var(--grad); transform: translateY(-2px); }
+.nav-social svg { width: 15px; height: 15px; fill: currentColor; }
+@media (max-width: 1080px){ .nav-social { display: none; } }
 .lang-toggle {
   font-family: var(--font); font-size: .82rem; font-weight: 600;
   border: 1.5px solid var(--line); background: #fff;
@@ -140,6 +146,12 @@ h3 { font-size: clamp(1.2rem, 2.4vw, 1.55rem); }
   border-top: 1px solid var(--line); padding-top: 1.5rem; }
 .hero-meta .num { font-size: 1.8rem; font-weight: 800; }
 .hero-meta .lbl { font-size: .8rem; color: var(--slate); }
+.hero-meta--center { justify-content: center; text-align: center; gap: 2.8rem; align-items: flex-end; }
+.hero-meta--center .num { font-size: 2.5rem; }
+.hero-meta--center .lbl { font-size: .9rem; }
+.hero-meta--center .meta-fellow { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+.hero-meta--center .fellow-logo { height: 30px; width: auto; }
+@media (max-width: 600px){ .hero-meta--center { gap: 1.6rem; } .hero-meta--center .num { font-size: 2rem; } }
 .hero-visual { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lift); }
 .hero-visual img { width: 100%; display: block; }
 
